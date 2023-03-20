@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+char ab;
+printf("enter the character");
+scanf("%c",&ab);
+if(ab='a'||ab='e'||ab='i'||ab='o'||ab='u')
+{
+printf("vowel");
+}
+else
+{
+printf("consonant");
+}
+getch();
+return 0;
+}
