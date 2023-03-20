@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a,b;
+clrscr();
+printf("enter the current year falls on anniversary: ");
+scanf("%d",&a);
+if(a%4==0)
+{
+b=a+4;
+printf("it is a leap year!\n");
+printf("the next leap year your anniversary falls on %d" ,b);
+}
+else
+{
+printf("it is not a leap year !\n",b);
+}
+getch();
+return 0;
+}
