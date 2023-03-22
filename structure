@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+union unionjob
+{
+char name[32];
+float salary;
+int workerno;
+}ujob;
+int main()
+{
+clrscr();
+printf("size of union = %f bytes",sizeof(ujob));
+scanf("%f",&ujob);
+getch();
+return 0;
+}
