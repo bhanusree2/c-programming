@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+struct student
+{
+clrscr();
+char name[50];
+int roll;
+float marks;
+} s[10];
+int main()
+{
+int i;
+
+printf("enter the details of three students\n");
+for(i=0;i<3;i++)
+{
+printf("enter the roll");
+scanf("%d",&s[i].roll);
+printf("enter the marks");
+scanf("%s",&s[i].marks);
+printf("\n");
+}
+printf("displaying the details for the students\n");
+for(i=0;i<3;i++)
+{
+printf("\n roll number : %d\n",s[i].marks);
+printf("\n");
+}
+getch();
+return 0;
+}
