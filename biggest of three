@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a=10;
+int b;
+int c;
+clrscr();
+printf("enter the value of b");
+scanf("%d",&b);
+printf("enter the value of c");
+scanf("%d",&c);
+if(a>b && a>c)
+printf("%d is the biggest",a);
+if(b>a && b>c)
+printf("%d is the biggest",b);
+if(c>a && c>b)
+printf("%d is the biggest",c);
+getch();
+return 0;
+}
