@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+int number,sum=0,i;
+clrscr();
+printf("enter number: ");
+scanf("%d",&number);
+for(i=1;i<number;i++);
+{
+if(number %i==0)
+{
+sum+=i;
+}
+}
+if(sum==number)
+{
+printf("%d is PERFECT.",number);
+}
+else
+{
+printf("%d is NOT PERFECT.",number);
+}
+getch();
+return 0;
+}
