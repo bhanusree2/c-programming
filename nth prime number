@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    int n, count = 0, num = 2, i, flag;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("%d prime numbers are: ", n);
+    while (count < n) {
+        flag = 1;
+        for (i = 2; i <= num/2; i++) {
+            if (num % i == 0) {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag) {
+            printf("%d ", num);
+            count++;
+        }
+        num++;
+    }
+
+    int nth_prime = num - 1;
+    printf("\n%dth Prime number is %d\n", n, nth_prime);
+
+    printf("%d prime numbers after %d are: ", n, nth_prime);
+    count = 0;
+    while (count < n) {
+        flag = 1;
+        for (i = 2; i <= num/2; i++) {
+            if (num % i == 0) {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag) {
+            printf("%d ", num);
+            count++;
+        }
+        num++;
+    }
+
+    return 0;
+}
