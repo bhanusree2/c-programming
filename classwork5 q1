@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    float python, c_prog, math, physics, total, aggregate;
+
+    // Taking input for marks in four subjects
+    printf("Enter the marks in python: ");
+    scanf("%f", &python);
+    printf("Enter the marks in c programming: ");
+    scanf("%f", &c_prog);
+    printf("Enter the marks in Mathematics: ");
+    scanf("%f", &math);
+    printf("Enter the marks in Physics: ");
+    scanf("%f", &physics);
+
+    // Calculating total marks and aggregate percentage
+    total = python + c_prog + math + physics;
+    aggregate = (total/400)*100;
+
+    // Displaying the total and aggregate marks
+    printf("Total= %.1f\n", total);
+    printf("Aggregate = %.1f\n", aggregate);
+
+    // Displaying the grade based on the aggregate percentage
+    if (aggregate >= 75) {
+        printf("DISTINCTION\n");
+    } else if (60 <= aggregate && aggregate < 75) {
+        printf("First Division\n");
+    } else if (50 <= aggregate && aggregate < 60) {
+        printf("Second Division\n");
+    } else if (40 <= aggregate && aggregate < 50) {
+        printf("Third Division\n");
+    } else {
+        printf("Fail\n");
+    }
+
+    return 0;
+}
